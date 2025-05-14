@@ -91,11 +91,7 @@ export default function TextEditor() {
         onInput={handleEditorInput}
         suppressContentEditableWarning
       >
-        {editorContent === '' && (
-          <span className="text-gray-400 select-none absolute top-1/2 left-6 transform -translate-y-1/2">
-            Start typing or paste your text here...
-          </span>
-        )}
+        {editorContent}
       </div>
 
       {showButton && (
